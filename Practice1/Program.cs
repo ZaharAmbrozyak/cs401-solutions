@@ -52,7 +52,7 @@ namespace practice1
             Random rand = new Random();
             
             int secret = rand.Next(1, 101);
-            int guess = 0;
+            int guess = 0, tries = 0;
             
             Console.WriteLine("Вгадайте число, яке в проміжку від 1 до 100!");
             do
@@ -60,8 +60,10 @@ namespace practice1
                 Console.WriteLine("Введіть число: ");
                 int.TryParse(Console.ReadLine(), out guess);
                 Console.WriteLine(CheckGuess(secret, guess));
+                tries++;
             } while (secret != guess);
-
+            
+            Console.WriteLine($"Кількість витрачених спроб: {tries}");
         }
         static void Main(string[] args)
         {
