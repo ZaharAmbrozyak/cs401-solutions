@@ -147,6 +147,40 @@ namespace MyFirstApp
             };
 
             ages["Charlie"] = 35;
+
+            int alicesAge = ages["Alice"];
+            int test;
+            if (ages.ContainsKey("Alice"))
+            {
+                Console.WriteLine("Alice is here");
+            }
+            if (ages.TryGetValue("Alice", out int testing))
+            {
+                Console.WriteLine(testing);
+            }
+
+            void Greet(string name)
+            {
+                Console.WriteLine($"Hello, {name}!");
+            }
+            
+            int add(int a, int b)
+            {
+                return a + b;
+            }
+
+            void PrintMessage(string message, int count = 1)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    Console.WriteLine(message);
+                }
+            }
+            PrintMessage("Hello");
+            PrintMessage("Test", count: 5);
+
+            int Square(int x) => x * x;
+            
         } 
     }
 }
