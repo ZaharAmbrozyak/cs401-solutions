@@ -96,7 +96,57 @@ namespace MyFirstApp
                     Console.WriteLine("Casual day");
                     break;
             }
+
+            List<string> courses = new List<string> { "CS401", "SE100", "CS200" };
+            foreach (string course in courses)
+            {
+                Console.WriteLine($"I love {course}");
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Iteration: {i}");
+            }
+
+            int count = 0;
+            while (count < 3)
+            {
+                // may not work
+                Console.WriteLine(count);
+                count++;
+            }
+
+            do
+            {
+                // this code works at least one time
+                Console.WriteLine("Done!");
+            } while (false);
+
+            List<string> students = new List<string>();
+            
+            students.Add("Oleksii"); // .append()
+            students.AddRange(new[] { "Artem", "Ivan" }); // .extend()
+            students.Remove("Ivan"); // .remove()
+            students.Insert(0, "Hanna"); // .insert()
+
+            bool hasIvan = students.Contains("Ivan"); // "Ivan" is in students
+            int another_count = students.Count;
+
+            int[] numbers = new int[3];
+            numbers[0] = 10;
+            numbers[1] = 20;
+            numbers[2] = 30;
+
+            string[] cars = { "Volvo", "BMW", "Tesla" };
+            int length = cars.Length; // 3 
+
+            Dictionary<string, int> ages = new Dictionary<string, int>()
+            {
+                { "Alice", 25 },
+                { "Bob", 30 }
+            };
+
+            ages["Charlie"] = 35;
         } 
-        
     }
 }
