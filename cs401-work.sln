@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs401-work", "cs401-work\cs401-work.csproj", "{DA228DEC-97A9-4D99-8857-2FA7027F668A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "introduction_to_csharp", "introduction_to_csharp\introduction_to_csharp.csproj", "{DA228DEC-97A9-4D99-8857-2FA7027F668A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
