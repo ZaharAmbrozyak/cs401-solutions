@@ -20,4 +20,18 @@ public class Rectangle
     {
         return _height * _width;
     }
+
+    public int GetPerimeter()
+    {
+        return (_width + _height) * 2;
+    }
+    public int GetWidth()
+    {
+        return _width;
+    }
+
+    public int GetHeight()
+    {
+        return _height;
+    }
 }
