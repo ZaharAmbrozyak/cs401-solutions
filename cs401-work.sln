@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "introduction_to_csharp", "introduction_to_csharp\introduction_to_csharp.csproj", "{DA228DEC-97A9-4D99-8857-2FA7027F668A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice1", "Practice1\Practice1.csproj", "{1AF22F97-2B0D-4EEF-AA96-08131790C0C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice1-2", "Practice1-2\Practice1-2.csproj", "{1AF22F97-2B0D-4EEF-AA96-08131790C0C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prep1", "prep1\prep1.csproj", "{3553F7CF-8C4C-4F6F-A289-C3B01243B903}"
 EndProject
