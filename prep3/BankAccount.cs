@@ -8,6 +8,7 @@ public class BankAccount
 
     private int totalDeposits;
 
+    private List<Transaction> transactions = new();
     public int GetTotalDeposits() => totalDeposits;
 
     public int GetTotalSpents() => totalSpent;
@@ -21,6 +22,7 @@ public class BankAccount
             throw new ArgumentException("Amount should be positive.");
         }
 
+        transactions.Add(new Transaction(amount, TransactionType.Deposit));
         totalDeposits += amount;
         currentAmount += amount;
     }
@@ -31,7 +33,8 @@ public class BankAccount
         {
             throw new ArgumentException($"Can not spend ${amount} while having ${currentAmount}.");
         }
-
+        
+        transactions.Add(new Transaction(amount, TransactionType.Spending));
         totalSpent += amount;
         currentAmount -= amount;
     }
