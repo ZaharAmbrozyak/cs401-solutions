@@ -9,7 +9,7 @@ public class TextInputQuestion : IQuestion
     public TextInputQuestion(string text, string answer)
     {
         Text = text;
-        this.answer = answer
+        this.answer = answer;
     }
     public bool CheckAnswer(string userAnswer)
     {
