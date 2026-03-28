@@ -2,11 +2,11 @@ namespace midterm_prep;
 
 public class Library
 {
-    private List<IMaterial> materials = [];
+    private List<IShowable> materials = [];
 
-    public void AddMaterial(IMaterial material)
+    public void AddMaterial(IShowable showable)
     {
-        materials.Add(material);
+        materials.Add(showable);
     }
 
     public string ShowMaterials()
@@ -14,7 +14,7 @@ public class Library
         var output = "Materials\n";
         foreach (var material in materials)
         {
-            output += material.Show();
+            output += material.Show() + "\n";
         }
 
         return output;

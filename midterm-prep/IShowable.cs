@@ -1,6 +1,6 @@
 namespace midterm_prep;
 
-public interface IMaterial
+public interface IShowable
 {
     string Show();
 }

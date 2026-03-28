@@ -1,21 +1,7 @@
 namespace midterm_prep;
 
-public class Book : IMaterial
+public class Book : BaseMaterial
 {
-    private string name;
-    public string Name
-    {
-        get => name;
-        init
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                throw new ArgumentException("Name cannot be empty!");
-            }
-
-            name = value;
-        }
-    }
     
     private string author;
     public string Author
@@ -46,23 +32,8 @@ public class Book : IMaterial
             description = value;
         }
     }
-    
-    private int year;
-    public int Year
-    {
-        get => year;
-        init
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Year should be positive!");
-            }
 
-            year = value;
-        }
-    }
-
-    public string Show()
+    public override string Show()
     {
         return $"Book '{name}', author {author}, year published {year}. {description}";
     }
